@@ -26,7 +26,7 @@ import CoreBluetooth
 public class EddystoneScanner: NSObject, CBCentralManagerDelegate {
 
   @objc(delegate)
-  var delegate: EddystoneScannerDelegate?
+  public var delegate: EddystoneScannerDelegate?
 
   ///
   /// How long we should go without a beacon sighting before considering it "lost". In seconds.
