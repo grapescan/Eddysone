@@ -10,6 +10,7 @@
 		C40710882BE319D03060FB86 /* BeaconID.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40712B4FBE9A48CF4949CE5 /* BeaconID.swift */; };
 		C40712C5BB21D10BE63F1090 /* BeaconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4071F5A54F2F3575F483284 /* BeaconInfo.swift */; };
 		C40717C662E18605B8A82612 /* Eddystone.h in Headers */ = {isa = PBXBuildFile; fileRef = C4071678E601A75ACC7B46F6 /* Eddystone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C407192A1AD0737A69AFD911 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C4071ABA99D2D30EC9C8E767 /* README.md */; };
 		C4071B48B98C19047BCBEE9E /* DispatchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4071E8075E32EEDA2B8B315 /* DispatchTimer.swift */; };
 		C4071C0176A582C80F69B4C3 /* EddystoneScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4071D01C8E823552BD0698F /* EddystoneScannerDelegate.swift */; };
 		C4071D3496AC2D217728A77E /* EddystoneScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4071F5CF86CB1B432B87B34 /* EddystoneScanner.swift */; };
@@ -20,6 +21,7 @@
 		A38C5D032382E1B60043B2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C40712B4FBE9A48CF4949CE5 /* BeaconID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconID.swift; sourceTree = "<group>"; };
 		C4071678E601A75ACC7B46F6 /* Eddystone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eddystone.h; sourceTree = "<group>"; };
+		C4071ABA99D2D30EC9C8E767 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C4071D01C8E823552BD0698F /* EddystoneScannerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EddystoneScannerDelegate.swift; sourceTree = "<group>"; };
 		C4071E8075E32EEDA2B8B315 /* DispatchTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchTimer.swift; sourceTree = "<group>"; };
 		C4071F5A54F2F3575F483284 /* BeaconInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconInfo.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			children = (
 				A38C5D012382E1B60043B2EB /* Eddystone */,
 				A38C5D002382E1B60043B2EB /* Products */,
+				C4071ABA99D2D30EC9C8E767 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +155,7 @@
 				C4071B48B98C19047BCBEE9E /* DispatchTimer.swift in Sources */,
 				C4071D3496AC2D217728A77E /* EddystoneScanner.swift in Sources */,
 				C4071C0176A582C80F69B4C3 /* EddystoneScannerDelegate.swift in Sources */,
+				C407192A1AD0737A69AFD911 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
