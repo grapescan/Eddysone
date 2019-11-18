@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "31fd7d7314d6e59420719b65411a2f960f870477",
+  "iOS" : [
+    {
+      "name" : "Eddystone",
+      "hash" : "b9d212f664899db198864bad3d34b58764e209bafeda177ee932ffe71057f3f5",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}

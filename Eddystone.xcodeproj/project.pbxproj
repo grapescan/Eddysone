@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C40710882BE319D03060FB86 /* BeaconID.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40712B4FBE9A48CF4949CE5 /* BeaconID.swift */; };
 		C40712C5BB21D10BE63F1090 /* BeaconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4071F5A54F2F3575F483284 /* BeaconInfo.swift */; };
-		C40717C662E18605B8A82612 /* Eddystone.h in Headers */ = {isa = PBXBuildFile; fileRef = C4071678E601A75ACC7B46F6 /* Eddystone.h */; };
+		C40717C662E18605B8A82612 /* Eddystone.h in Headers */ = {isa = PBXBuildFile; fileRef = C4071678E601A75ACC7B46F6 /* Eddystone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4071B48B98C19047BCBEE9E /* DispatchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4071E8075E32EEDA2B8B315 /* DispatchTimer.swift */; };
 		C4071C0176A582C80F69B4C3 /* EddystoneScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4071D01C8E823552BD0698F /* EddystoneScannerDelegate.swift */; };
 		C4071D3496AC2D217728A77E /* EddystoneScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4071F5CF86CB1B432B87B34 /* EddystoneScanner.swift */; };

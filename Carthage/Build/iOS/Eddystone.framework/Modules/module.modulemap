@@ -1,0 +1,11 @@
+framework module Eddystone {
+  umbrella header "Eddystone.h"
+
+  export *
+  module * { export * }
+}
+
+module Eddystone.Swift {
+    header "Eddystone-Swift.h"
+    requires objc
+}
