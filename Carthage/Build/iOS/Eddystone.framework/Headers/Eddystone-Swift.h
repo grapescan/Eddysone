@@ -215,6 +215,7 @@ SWIFT_CLASS_NAMED("BeaconInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@protocol EddystoneScannerDelegate;
 @class CBCentralManager;
 @class CBPeripheral;
 @class NSNumber;
@@ -224,6 +225,7 @@ SWIFT_CLASS_NAMED("BeaconInfo")
 /// sighted beacons, be sure to implement BeaconScannerDelegate and set that on the scanner.
 SWIFT_CLASS_NAMED("EddystoneScanner")
 @interface EddystoneScanner : NSObject <CBCentralManagerDelegate>
+@property (nonatomic, strong) id <EddystoneScannerDelegate> _Nullable delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// MARK - private methods and delegate callbacks
@@ -464,6 +466,7 @@ SWIFT_CLASS_NAMED("BeaconInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@protocol EddystoneScannerDelegate;
 @class CBCentralManager;
 @class CBPeripheral;
 @class NSNumber;
@@ -473,6 +476,7 @@ SWIFT_CLASS_NAMED("BeaconInfo")
 /// sighted beacons, be sure to implement BeaconScannerDelegate and set that on the scanner.
 SWIFT_CLASS_NAMED("EddystoneScanner")
 @interface EddystoneScanner : NSObject <CBCentralManagerDelegate>
+@property (nonatomic, strong) id <EddystoneScannerDelegate> _Nullable delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// MARK - private methods and delegate callbacks
