@@ -23,7 +23,7 @@ public class BeaconID : NSObject {
     self.beaconType = beaconType
   }
 
-  @objc
+  @objc(getBeaconID)
   public func getBeaconID() -> [UInt8] {
     beaconID
   }
