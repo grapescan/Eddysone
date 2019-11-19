@@ -16,12 +16,16 @@ public class BeaconID : NSObject {
   ///
   /// The raw beaconID data. This is typically printed out in hex format.
   ///
-  @objc
-  public let beaconID: [UInt8]
+  let beaconID: [UInt8]
 
   init(beaconType: BeaconType!, beaconID: [UInt8]) {
     self.beaconID = beaconID
     self.beaconType = beaconType
+  }
+
+  @objc
+  public func getBeaconID() -> [UInt8] {
+    beaconID
   }
 
   override public var description: String {
