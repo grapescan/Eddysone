@@ -8,11 +8,11 @@
   "tvOS" : [
 
   ],
-  "commitish" : "05c91690b3cc71864855b8587f1c0936e7a0b3b0",
+  "commitish" : "601b54ed686386cb224946522d58da2b60ff84d3",
   "iOS" : [
     {
       "name" : "Eddystone",
-      "hash" : "7af483d65d3c8c15deac12250e4a03884ea87708b1f0301ac3dcb685d4e45711",
+      "hash" : "3213f31c89743cd266eb7a5b890ac0e6375fcb38b71ddbaec07bba3e946c4197",
       "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
     }
   ]

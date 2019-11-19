@@ -24,8 +24,8 @@ public class BeaconID : NSObject {
   }
 
   @objc(getBeaconID)
-  public func getBeaconID() -> [UInt8] {
-    beaconID
+  public func getBeaconID() -> String {
+    hexBeaconID(beaconID: self.beaconID)
   }
 
   override public var description: String {
