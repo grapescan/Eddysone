@@ -209,7 +209,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Uniquely identifies an Eddystone compliant beacon.
 SWIFT_CLASS_NAMED("BeaconID")
 @interface BeaconID : NSObject
-- (NSString * _Nonnull)getBeaconID SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getHexString SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -221,7 +221,7 @@ SWIFT_CLASS_NAMED("BeaconID")
 /// RSSI, and possibly telemetry information.
 SWIFT_CLASS_NAMED("BeaconInfo")
 @interface BeaconInfo : NSObject
-@property (nonatomic, readonly, strong) BeaconID * _Nonnull beaconID;
+- (BeaconID * _Nonnull)getBeaconID SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -472,7 +472,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Uniquely identifies an Eddystone compliant beacon.
 SWIFT_CLASS_NAMED("BeaconID")
 @interface BeaconID : NSObject
-- (NSString * _Nonnull)getBeaconID SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getHexString SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -484,7 +484,7 @@ SWIFT_CLASS_NAMED("BeaconID")
 /// RSSI, and possibly telemetry information.
 SWIFT_CLASS_NAMED("BeaconInfo")
 @interface BeaconInfo : NSObject
-@property (nonatomic, readonly, strong) BeaconID * _Nonnull beaconID;
+- (BeaconID * _Nonnull)getBeaconID SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

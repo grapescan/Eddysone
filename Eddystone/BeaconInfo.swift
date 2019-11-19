@@ -54,8 +54,7 @@ public class BeaconInfo : NSObject {
     }
   }
 
-  @objc(beaconID)
-  public let beaconID: BeaconID
+  let beaconID: BeaconID
   let txPower: Int
   let RSSI: Int
   let telemetry: NSData?
@@ -65,6 +64,11 @@ public class BeaconInfo : NSObject {
     self.txPower = txPower
     self.RSSI = RSSI
     self.telemetry = telemetry
+  }
+
+  @objc(getBeaconID)
+  public func getBeaconID() -> BeaconID {
+    self.beaconID
   }
 
   class func frameTypeForFrame(advertisementFrameList: [NSObject : AnyObject]) -> EddystoneFrameType {

@@ -23,8 +23,8 @@ public class BeaconID : NSObject {
     self.beaconType = beaconType
   }
 
-  @objc(getBeaconID)
-  public func getBeaconID() -> String {
+  @objc(getHexString)
+  public func getHexString() -> String {
     hexBeaconID(beaconID: self.beaconID)
   }
 
