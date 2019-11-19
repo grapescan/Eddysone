@@ -25,8 +25,7 @@ import CoreBluetooth
 @objc(EddystoneScanner)
 public class EddystoneScanner: NSObject, CBCentralManagerDelegate {
 
-  @objc(delegate)
-  public var delegate: EddystoneScannerDelegate?
+  private var delegate: EddystoneScannerDelegate?
 
   ///
   /// How long we should go without a beacon sighting before considering it "lost". In seconds.
@@ -45,6 +44,11 @@ public class EddystoneScanner: NSObject, CBCentralManagerDelegate {
 
     self.centralManager = CBCentralManager(delegate: self, queue: beaconOperationsQueue)
     self.centralManager.delegate = self
+  }
+
+  @objc
+  public func setDelegate(delegate: EddystoneScannerDelegate?) {
+    self.delegate = delegate
   }
 
   ///

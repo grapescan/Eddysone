@@ -225,9 +225,9 @@ SWIFT_CLASS_NAMED("BeaconInfo")
 /// sighted beacons, be sure to implement BeaconScannerDelegate and set that on the scanner.
 SWIFT_CLASS_NAMED("EddystoneScanner")
 @interface EddystoneScanner : NSObject <CBCentralManagerDelegate>
-@property (nonatomic, strong) id <EddystoneScannerDelegate> _Nullable delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setDelegateWithDelegate:(id <EddystoneScannerDelegate> _Nullable)delegate;
 /// MARK - private methods and delegate callbacks
 - (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
 /// Core Bluetooth CBCentralManager callback when we discover a beacon. We’re not super
@@ -476,9 +476,9 @@ SWIFT_CLASS_NAMED("BeaconInfo")
 /// sighted beacons, be sure to implement BeaconScannerDelegate and set that on the scanner.
 SWIFT_CLASS_NAMED("EddystoneScanner")
 @interface EddystoneScanner : NSObject <CBCentralManagerDelegate>
-@property (nonatomic, strong) id <EddystoneScannerDelegate> _Nullable delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setDelegateWithDelegate:(id <EddystoneScannerDelegate> _Nullable)delegate;
 /// MARK - private methods and delegate callbacks
 - (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
 /// Core Bluetooth CBCentralManager callback when we discover a beacon. We’re not super
