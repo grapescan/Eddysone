@@ -205,11 +205,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+/// BeaconID
+/// Uniquely identifies an Eddystone compliant beacon.
+SWIFT_CLASS_NAMED("BeaconID")
+@interface BeaconID : NSObject
+/// The raw beaconID data. This is typically printed out in hex format.
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull beaconID;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// BeaconInfo
 /// Contains information fully describing a beacon, including its beaconID, transmission power,
 /// RSSI, and possibly telemetry information.
 SWIFT_CLASS_NAMED("BeaconInfo")
 @interface BeaconInfo : NSObject
+@property (nonatomic, readonly, strong) BeaconID * _Nonnull beaconID;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -456,11 +469,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+/// BeaconID
+/// Uniquely identifies an Eddystone compliant beacon.
+SWIFT_CLASS_NAMED("BeaconID")
+@interface BeaconID : NSObject
+/// The raw beaconID data. This is typically printed out in hex format.
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull beaconID;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// BeaconInfo
 /// Contains information fully describing a beacon, including its beaconID, transmission power,
 /// RSSI, and possibly telemetry information.
 SWIFT_CLASS_NAMED("BeaconInfo")
 @interface BeaconInfo : NSObject
+@property (nonatomic, readonly, strong) BeaconID * _Nonnull beaconID;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

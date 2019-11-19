@@ -3,7 +3,8 @@
 ///
 /// Uniquely identifies an Eddystone compliant beacon.
 ///
-class BeaconID : NSObject {
+@objc(BeaconID)
+public class BeaconID : NSObject {
 
   enum BeaconType {
     case Eddystone              // 10 bytes namespace + 6 bytes instance = 16 byte ID
@@ -15,7 +16,8 @@ class BeaconID : NSObject {
   ///
   /// The raw beaconID data. This is typically printed out in hex format.
   ///
-  let beaconID: [UInt8]
+  @objc
+  public let beaconID: [UInt8]
 
   init(beaconType: BeaconType!, beaconID: [UInt8]) {
     self.beaconID = beaconID

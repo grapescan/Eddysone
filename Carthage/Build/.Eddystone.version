@@ -12,7 +12,7 @@
   "iOS" : [
     {
       "name" : "Eddystone",
-      "hash" : "4cccd64261e913080041ebd8e89ebcab8ca02caa3e4d3468ef1eeafdda23d7b2",
+      "hash" : "65946d7d421f6fc18eefdd3b5810b4363bbec2d9ee8b3cdd3d540d92328a9151",
       "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
     }
   ]

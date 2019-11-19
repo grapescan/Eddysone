@@ -54,7 +54,8 @@ public class BeaconInfo : NSObject {
     }
   }
 
-  let beaconID: BeaconID
+  @objc(beaconID)
+  public let beaconID: BeaconID
   let txPower: Int
   let RSSI: Int
   let telemetry: NSData?
